@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper CASE Tools</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <header>
+        <div id="back-image">
+            <a href="#" onclick="history.back()"><img src="/images/back.png"></a> 
+        </div>
+        <div class="center-text">
+            <h2>Ülemise taseme CASE-vahendid</h2>
+        </div>
+        <div class="spacer"></div>
+    </header>
+
+    <div class="description center-text">
+        <p>
+            <b>Upper Case Tools</b> ehk <b>Ülemise taseme CASE-vahendid</b> toetavad analüüsi ja projekteerimist. 
+            Peamiselt on nad kasutusel kasutajanõuete analüüsimisel ja dokumenteerimisel. 
+            Nad on ennekõike mõeldud visualiseerimiseks, erinevate skeemide koostamiseks ja ka dokumentatsiooni 
+            genereerimiseks. Nad toetavad traditsiooniliste diagrammikeelte kasutamist 
+            (olem-seos diagrammid, andmemudelid, UML-skeemid, jne).
+        </p>
+    </div>
+
+    <div class="dropdown-buttons">
+        <div class="dropdown-div">
+            <button onclick="triggerDropDownDoxygen()" class="button">
+                Doxygen
+            </button>
+
+            <div class="dropdown-content" id="doxygen-dropdown">
+                <img src="/images/Doxygen.png" alt="Doxygen">
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        function triggerDropDownDoxygen() {
+            var dropdownContent = document.getElementById("doxygen-dropdown");
+            if (dropdownContent.style.display === "none") {
+              dropdownContent.style.display = "block";
+            } else {
+              dropdownContent.style.display = "none";
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
