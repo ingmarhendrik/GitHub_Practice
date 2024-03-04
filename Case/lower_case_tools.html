@@ -28,18 +28,82 @@
     </div>
 
     <div class="dropdown-buttons">
-        <button class="button">
-            Doxygen
-        </button>
+        <div class="doxygen-content">
+            <button class="button" onclick="triggerDropDownDoxygen()">
+                Koodi genereerimise tööriistad
+            </button>
+            <div id="doxygen-dropdown" style="display: none">
+                <img src="../images/askcodi.png" alt="AskCodi">
 
-        <button class="button">
-            Accept 360
-        </button>
+                <p><b>Koodi genereerimise tööriistad</b> aitavad protsesse sujuvamaks muuta 
+                    ja arendustöövoogu optimeerida. Nad loovad kiiresti koodi, mis on 
+                    optimeeritud erinevate platvormide jaoks, tagades samas, et kood on puhas 
+                    ja hõlpsasti loetav1. Mõned näited koodi genereerimise tööriistadest on
+                    Bootify, Flatlogic Platform ja AskCodi.</p>
 
-        <button class="button">
-            Basecamp
-        </button>
+            </div>
+        </div>
+
+        <div class="accept360-content">
+            <button class="button" onclick="triggerDropDownAccept360()">
+                Testimise tööriistad
+            </button>
+
+            <div id="accept360-dropdown" style="display: none">
+                <img src="../images/selenium.png" alt="Selenium">
+
+                <p>
+                    <b>Koodi testimise tööriistad</b> on tarkvararakendused, mis toetavad 
+                    erinevaid testimistegevusi, nagu planeerimine, nõuete kogumine, 
+                    järgu loomine, testi täitmine, defektide logimine ja testanalüüs. 
+                    Neid kasutatakse tarkvara töökindluse, põhjalikkuse ja jõudluse tagamiseks.</p>
+            </div>
+
+        </div>
+
+        <div class="basecamp-content">
+            <button class="button" onclick="triggerDropDownBasecamp()">
+                Hooldustööriistad
+            </button>
+
+            <div id="basecamp-dropdown" style="display: none">
+                <img src="../images/git.png" alt="Git">
+
+                <p><b>Koodihooldustööriistad</b> on tarkvararakendused, mis aitavad arendajatel hallata ja parandada oma koodibaasi kvaliteeti.</p>
+
+            </div>
+        </div>
     </div>
+
+    
+    <script>
+        function triggerDropDownDoxygen() {
+            var dropdown = document.getElementById("doxygen-dropdown");
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+
+        function triggerDropDownAccept360() {
+            var dropdown = document.getElementById("accept360-dropdown");
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+
+        function triggerDropDownBasecamp() {
+            var dropdown = document.getElementById("basecamp-dropdown");
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+    </script>
 
     
     <script src="scripts.js"></script> 
