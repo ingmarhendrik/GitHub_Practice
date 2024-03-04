@@ -28,13 +28,74 @@
     </div>
 
     <div class="dropdown-buttons">
-        <div class="dropdown-div">
-            <button onclick="triggerDropDownDoxygen()" class="button">
+        <div class="doxygen-content">
+            <button class="button" onclick="triggerDropDownDoxygen()">
                 Doxygen
             </button>
+            <div id="doxygen-dropdown">
+                <img src="/images/doxygen.png" alt="Doxygen">
 
-            <div class="dropdown-content" id="doxygen-dropdown">
-                <img src="/images/Doxygen.png" alt="Doxygen">
+                <p><b>Doxygen</b> on dokumentatsiooni generaator ja staatilise 
+                    analüüsi tööriist tarkvara lähtepuude jaoks. Kui 
+                    seda kasutatakse dokumentatsiooni generaatorina, 
+                    eraldab Doxygen teabe koodi spetsiaalselt vormindatud 
+                    kommentaaridest. Analüüsiks kasutades kasutab Doxygen 
+                    oma parsipuud koodistruktuuri diagrammide ja diagrammide 
+                    genereerimiseks. Doxygen saab ristviita dokumentatsioonile 
+                    ja koodile, nii et dokumendi lugeja saab hõlpsalt viidata 
+                    tegelikule koodile.</p>
+
+                <h2 style="margin-top: 20px; margin-bottom: 20px;">Miinused:</h2>
+                <ul>
+                    <li>Keeruline süntaks</li>
+                    <li>Dokumentatsiooni hooldus</li>
+                    <li>Integreerimine IDE-dega</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accept360-content">
+            <button class="button" onclick="triggerDropDownAccept360()">
+                Accept 360
+            </button>
+
+            <div id="accept360-dropdown">
+                <img src="/images/accept360.jpg" alt="Accept 360">
+
+                <p><b>ACCEPT 360</b> on veebijärelevalve kiht tööstusliku kvaliteedi 
+                    erinevate aspektide integreeritud haldamiseks. 
+                    Kohandatud armatuurlaudade ja aruannetega varustatud ACCEPT 
+                    360º võimaldab reaalajas vaadata kõiki süsteemi erinevate 
+                    funktsionaalsete piirkondade poolt töödeldud andmeid.</p>
+
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">Miinused:</h2>
+                <ul>
+                    <p>Esialgne vastuvõtu protsess võib olla aeglustatud</p>
+                    <p>Piiratud kohandatud aruandlus</p>
+                    <p>Keeruline integreerumine muude tööriistadega</p>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="basecamp-content">
+            <button class="button" onclick="triggerDropDownBasecamp()">
+                Basecamp
+            </button>
+
+            <div id="basecamp-dropdown">
+                <img src="/images/basecamp.png" alt="Basecamp">
+
+                <p><b>Basecamp</b> on tõhus koostöötööriist, mida kasutavad tuhanded meeskonnad 
+                    üle kogu maailma. Meeskonnad kasutavad Basecampi ülesannete jälgimiseks, 
+                    dokumentide koostamiseks, projektide kavandamiseks, vestluseks ja muuks.</p>
+
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">Miinused:</h2>
+                <ul>
+                    <p>Piiratud kohandatavus</p>
+                    <p>Jõudluse probleemid</p>
+                    <p>Teatud funktsioonide puudumine</p>
+                </ul>
             </div>
         </div>
     </div>
@@ -42,11 +103,29 @@
     
     <script>
         function triggerDropDownDoxygen() {
-            var dropdownContent = document.getElementById("doxygen-dropdown");
-            if (dropdownContent.style.display === "none") {
-              dropdownContent.style.display = "block";
+            var dropdown = document.getElementById("doxygen-dropdown");
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
             } else {
-              dropdownContent.style.display = "none";
+                dropdown.style.display = "none";
+            }
+        }
+
+        function triggerDropDownAccept360() {
+            var dropdown = document.getElementById("accept360-dropdown");
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+
+        function triggerDropDownBasecamp() {
+            var dropdown = document.getElementById("basecamp-dropdown");
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
             }
         }
     </script>
