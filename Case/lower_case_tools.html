@@ -28,48 +28,78 @@
     </div>
 
     <div class="dropdown-buttons">
-        <div class="doxygen-content">
-            <button class="button" onclick="triggerDropDownDoxygen()">
-                Koodi genereerimise tööriistad
+        <div class="first-case-tool-content">
+            <button class="button" onclick="triggerDropDownOne()">
+                Doxygen
             </button>
-            <div id="doxygen-dropdown" style="display: none">
-                <img src="../images/askcodi.png" alt="AskCodi">
+            <div id="first-case-tool-dropdown" style="display: none">
+                <img src="../images/doxygen.png" alt="Doxygen">
 
-                <p><b>Koodi genereerimise tööriistad</b> aitavad protsesse sujuvamaks muuta 
-                    ja arendustöövoogu optimeerida. Nad loovad kiiresti koodi, mis on 
-                    optimeeritud erinevate platvormide jaoks, tagades samas, et kood on puhas 
-                    ja hõlpsasti loetav1. Mõned näited koodi genereerimise tööriistadest on
-                    Bootify, Flatlogic Platform ja AskCodi.</p>
+                <p><b>Doxygen</b> on dokumentatsioonigeneraator ja staatilise analüüsi tööriist tarkvara lähtepuude jaoks.
+                Kui seda kasutatakse dokumentatsiooni generaatorina, eraldab Doxygen teabe koodi spetsiaalselt vormindatud
+                kommentaaridest. Analüüsiks kasutades kasutab Doxygen oma parsipuud koodistruktuuri diagrammide ja diagrammide
+                genereerimiseks. Doxygen saab ristviita dokumentatsioonile ja koodile, nii et dokumendi lugeja saab hõlpsalt viidata tegelikule koodile.
+                </p>
+
+                <h3>Funktsioonid:</h3>
+
+                <ul>
+                    <li>Platvormidevaheline</li>
+                    <li>Javadoc (1.1), qdoc3 (osaliselt) ja ECMA-334 (C# spetsifikatsioon) ühilduv.</li>
+                    <li>Toetab C/C++, Lex, Java, (Corba ja Microsoft) Java, Python, VHDL, PHP IDL, C#, Fortran, Objective-C 2.0 ja mingil määral ka D-allikaid.</li>
+                    <li>Loob sõelutud allikate jaoks struktureeritud XML-väljundi, mida saavad kasutada välised tööriistad.</li>
+                    <li>JavaScriptil põhinev reaalajas otsingu funktsioon, sümbolite otsimiseks sisestamise ajal (väikese ja keskmise suurusega projektide puhul)</li>
+                </ul>
 
             </div>
         </div>
 
-        <div class="accept360-content">
-            <button class="button" onclick="triggerDropDownAccept360()">
-                Testimise tööriistad
+        <div class="second-case-tool-content">
+            <button class="button" onclick="triggerDropDownTwo()">
+                git
             </button>
 
-            <div id="accept360-dropdown" style="display: none">
-                <img src="../images/selenium.png" alt="Selenium">
-
-                <p>
-                    <b>Koodi testimise tööriistad</b> on tarkvararakendused, mis toetavad 
-                    erinevaid testimistegevusi, nagu planeerimine, nõuete kogumine, 
-                    järgu loomine, testi täitmine, defektide logimine ja testanalüüs. 
-                    Neid kasutatakse tarkvara töökindluse, põhjalikkuse ja jõudluse tagamiseks.</p>
-            </div>
-
-        </div>
-
-        <div class="basecamp-content">
-            <button class="button" onclick="triggerDropDownBasecamp()">
-                Hooldustööriistad
-            </button>
-
-            <div id="basecamp-dropdown" style="display: none">
+            <div id="second-case-tool-dropdown" style="display: none">
                 <img src="../images/git.png" alt="Git">
 
-                <p><b>Koodihooldustööriistad</b> on tarkvararakendused, mis aitavad arendajatel hallata ja parandada oma koodibaasi kvaliteeti.</p>
+                <p><b>Git</b> hajutatud versioonihaldussüsteem, mis jälgib muudatusi mis tahes arvutifailide komplektis,
+                mida tavaliselt kasutatakse programmeerijate töö koordineerimiseks, kes arendavad tarkvaraarenduse ajal koostöös lähtekoodi. 
+                Selle eesmärkide hulka kuuluvad kiirus, andmete terviklikkus ja hajutatud, mittelineaarsete töövoogude tugi 
+                (tuhanded paralleelsed harud, mis töötavad erinevates arvutites).</p>
+
+                <h3>Funktsioonid:</h3>
+
+                <ul>
+                    <li>Jälgib ajalugu</li>
+                    <li>Toetab mitelineaarset arengut</li>
+                    <li>Loob varukoopiaid</li>
+                    <li>Skaleeritav</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="third-case-tool-content">
+            <button class="button" onclick="triggerDropDownThree()">
+                draw.io
+            </button>
+
+            <div id="third-case-tool-dropdown" style="display: none">
+                <img src="../images/robohelp.png" alt="Adobe Robohelp">
+
+                <p><b>Adobe Robohelp</b> on populaarne Adobe'i spikri loomise tööriist (<em>Help Authoring Tool</em> ehk <em>HAT</em>). 
+                Seda kasutavad tööstusharu spetsialistid, et pakkuda kaasahaaravat abisisu, e-õppe ressursse,
+                organisatsioonipoliitikat ja teadmistebaasi artikleid laiale vaatajaskonnale sõltumata seadme vormist.</p>
+
+                <h3>Funktsioonid:</h3>
+
+                <ul>
+                    <li>Ühe klõpsuga reageeriv HTML5 avaldamine:</li>
+                    <li>Kiire ja lihtne Dropboxi toega jagamine ja koostöö</li>
+                    <li>Kasutaja määratud muutujate (UDV) skript</li>
+                    <li>Kohandatavad tingimuslikud ehitussildid (CBT)</li>
+                    <li>Kohandatud päised ja jalused trükitud dokumentides</li>
+                </ul>
 
             </div>
         </div>
@@ -77,8 +107,8 @@
 
     
     <script>
-        function triggerDropDownDoxygen() {
-            var dropdown = document.getElementById("doxygen-dropdown");
+        function triggerDropDownOne() {
+            var dropdown = document.getElementById("first-case-tool-dropdown");
             if (dropdown.style.display === "none") {
                 dropdown.style.display = "block";
             } else {
@@ -86,8 +116,8 @@
             }
         }
 
-        function triggerDropDownAccept360() {
-            var dropdown = document.getElementById("accept360-dropdown");
+        function triggerDropDownTwo() {
+            var dropdown = document.getElementById("second-case-tool-dropdown");
             if (dropdown.style.display === "none") {
                 dropdown.style.display = "block";
             } else {
@@ -95,8 +125,8 @@
             }
         }
 
-        function triggerDropDownBasecamp() {
-            var dropdown = document.getElementById("basecamp-dropdown");
+        function triggerDropDownThree() {
+            var dropdown = document.getElementById("third-case-tool-dropdown");
             if (dropdown.style.display === "none") {
                 dropdown.style.display = "block";
             } else {
@@ -106,6 +136,5 @@
     </script>
 
     
-    <script src="scripts.js"></script> 
 </body>
 </html>

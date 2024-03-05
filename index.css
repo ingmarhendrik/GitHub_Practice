@@ -88,38 +88,46 @@ h3 {
 
 .dropdown-buttons {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     margin-top: 100px;
 
 }
 
-.dropdown-buttons img {
-    margin-top: 20px;
-    width: 500px;
-    display: flex;
+.dropdown-buttons button {
+    margin: 10px auto 10px auto;
 }
 
-.doxygen-content,
-.accept360-content,
-.basecamp-content {
+.first-case-tool-content,
+.second-case-tool-content,
+.third-case-tool-content {
     text-align: center;
+
 }
 
-.doxygen-content img,
-.accept360-content img,
-.basecamp-content img {
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 500px;
+.first-case-tool-content img,
+.second-case-tool-content img,
+.third-case-tool-content img {
+    margin: 20px auto;
+    width: 1000px;
 }
 
-.doxygen-content p,
-.accept360-content p,
-.basecamp-content p {
-    max-width: 50%;
-    margin: 0 auto; 
-    margin-top: 20px;
+.first-case-tool-content p,
+.second-case-tool-content p,
+.third-case-tool-content p {
+    max-width: 40%;
+    margin: 20px auto 50px auto;  
+}
+
+.first-case-tool-content ul,
+.second-case-tool-content ul,
+.third-case-tool-content ul {
+    margin: 20px auto 50px auto;  
+}
+
+.first-case-tool-content li,
+.second-case-tool-content li,
+.third-case-tool-content li {
+    margin: 10px auto 10px auto;  
 }
 
 

@@ -28,48 +28,73 @@
     </div>
 
     <div class="dropdown-buttons">
-        <div class="doxygen-content">
-            <button class="button" onclick="triggerDropDownDoxygen()">
-                Olem-seos diagrammid
+        <div class="first-case-tool-content">
+            <button class="button" onclick="triggerDropDownOne()">
+                Lucidchart
             </button>
-            <div id="doxygen-dropdown" style="display: none">
-                <img src="../images/erd.png" alt="ERD näide">
+            <div id="first-case-tool-dropdown" style="display: none">
+                <img src="../images/lucidchart.jpg" alt="Lucidchart">
 
-                <p><b>Olem-seos diagrammid</b> ehk <em>Entity-relationship Diagrams</em> (<em>ERD</em>) on teatud tüüpi vooskeemi tüüp, 
-                    mis illustreerib, kuidas "olemid" (nt inimesed, objektid või mõisted) on süsteemis üksteisega seotud. 
-                    ER diagramme kasutatakse kõige sagedamini relatsiooniandmebaaside kujundamiseks või silumiseks tarkvaratehnika, äriinfosüsteemide,
-                     hariduse ja teadustöö valdkondades. Tuntud ka kui ERD-d või ER-mudelid, kasutavad nad määratletud sümbolite komplekti, nagu ristkülikud, 
-                     rombid, ovaalid ja ühendusjooned, et kujutada olemite, suhete ja nende atribuutide omavahelist seotust. Need peegeldavad 
-                     grammatilist struktuuri, kusjuures üksused on nimisõnad ja suhted kui tegusõnad.</p>
+                <p><b>Lucidchart</b> on veebipõhine diagrammide loomise rakendus, mis võimaldab kasutajatel visuaalselt koostööd teha,
+                     joonistada ning luua erinevaid diagramme (nagu nt <em>ERD</em>) ning parandada protsesse, süsteeme ja organisatsioonilisi struktuure. 
+                     See on mõeldud meeskondadele, et hõlbustada reaalajas koostööd kasutades visuaalseid protsesse, luues vooskeeme, makette, UML-diagramme ja palju muud.</p>
+
+                <h3>Funktsioonid:</h3>
+
+                <ul>
+                    <li><em>drag-and-drop</em> liides</li>
+                    <li>Reaalajas kaasautorlus, kujupõhised kommentaarid ja koostöökursorid</li>
+                    <li>Andmete linkimine</li>
+                    <li>Automaatne visualiseerimine organisatsiooni diagrammide ja ERD-de loomiseks</li>
+                    <li>SQL-i impordi ja ekspordi võimalused</li>
+                </ul>
 
             </div>
         </div>
 
-        <div class="accept360-content">
-            <button class="button" onclick="triggerDropDownAccept360()">
-                Andmemudelid
+        <div class="second-case-tool-content">
+            <button class="button" onclick="triggerDropDownTwo()">
+                erwin Data Modeler
             </button>
 
-            <div id="accept360-dropdown" style="display: none">
-                <img src="../images/data-model.png" alt="Andmemudelite näide">
+            <div id="second-case-tool-dropdown" style="display: none">
+                <img src="../images/erwin.png" alt="erwin Data Modeler">
 
-                <p><b>Andmemudel</b> on abstraktne mudel, mis korraldab andmete elemente ja standardib nende omavahelist seost ja reaalmaailma olemite omadusi.
-                     Näiteks võib andmemudel määrata, et autot esindav andmeelement koosneb paljudest muudest elementidest, mis omakorda tähistavad auto värvi 
-                     ja suurust ning määravad selle omaniku.</p>
+                <p><b>erwin Data Modeler</b> on andmemodelleerimistööriist, mida kasutatakse ettevõtte kõrgekvaliteediliste andmevarade leidmiseks,
+                     visualiseerimiseks, kujundamiseks, juurutamiseks ja standardiseerimiseks.</p>
+
+                <h3>Funktsioonid:</h3>
+
+                <ul>
+                    <li>Diagrammeerimine ja visualiseerimine</li>
+                    <li><em>Bulk</em> Editor</li>
+                    <li>Andmebaasi pöördinsenering</li>
+                    <li>Aruandlus ja printimine</li>
+                </ul>
             </div>
 
         </div>
 
-        <div class="basecamp-content">
-            <button class="button" onclick="triggerDropDownBasecamp()">
-                UML-skeemid
+        <div class="third-case-tool-content">
+            <button class="button" onclick="triggerDropDownThree()">
+                draw.io
             </button>
 
-            <div id="basecamp-dropdown" style="display: none">
-                <img src="../images/uml.png" alt="UML diagrammi näide">
+            <div id="third-case-tool-dropdown" style="display: none">
+                <img src="../images/draw_io.png" alt="draw.io">
 
-                <p><b>UML-skeem</b>, <b>Ühtne modelleerimiskeel</b>, ka <b>unifitseeritud modelleerimiskeel</b>, 
-                    on üldotstarbeline noteeringukeel keerulise tarkvara, peamiselt suurte objektorienteeritud projektide spetsifitseerimiseks ja visualiseerimiseks.</p>
+                <p><b>draw.io</b> või <b>diagrams.net</b>, on platvormideülene graafiku joonistamise tarkvara, mis on välja töötatud HTML5-s
+                     ja JavaScriptis. Selle liidest saab kasutada diagrammide, näiteks vooskeemide, traatraamide, UML-diagrammide, organisatsioonidiagrammide ja võrguskeemide loomiseks.</p>
+
+                <h3>Funktsioonid:</h3>
+
+                <ul>
+                    <li>Diagrammi andmete turvalisena hoidmine</li>
+                    <li>Lihtsalt kasutatav diagrammiredaktor</li>
+                    <li>Muu tarkvaraga diagrammide integreerimine</li>
+                    <li>Reaalajas koostöö tegemine</li>
+                    <li>Diagrammi teksti koostamine kasutades PlantUML-i või Mermaidi koodi, CSV-arvutustabeli andmeid ja vormindusteavet või SQL-koodi</li>
+                </ul>
 
             </div>
         </div>
@@ -77,8 +102,8 @@
 
     
     <script>
-        function triggerDropDownDoxygen() {
-            var dropdown = document.getElementById("doxygen-dropdown");
+        function triggerDropDownOne() {
+            var dropdown = document.getElementById("first-case-tool-dropdown");
             if (dropdown.style.display === "none") {
                 dropdown.style.display = "block";
             } else {
@@ -86,8 +111,8 @@
             }
         }
 
-        function triggerDropDownAccept360() {
-            var dropdown = document.getElementById("accept360-dropdown");
+        function triggerDropDownTwo() {
+            var dropdown = document.getElementById("second-case-tool-dropdown");
             if (dropdown.style.display === "none") {
                 dropdown.style.display = "block";
             } else {
@@ -95,8 +120,8 @@
             }
         }
 
-        function triggerDropDownBasecamp() {
-            var dropdown = document.getElementById("basecamp-dropdown");
+        function triggerDropDownThree() {
+            var dropdown = document.getElementById("third-case-tool-dropdown");
             if (dropdown.style.display === "none") {
                 dropdown.style.display = "block";
             } else {
