@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upper CASE Tools</title>
+    <title>ERD komponendid</title>
     <link rel="stylesheet" href="../index.css">
 </head>
 <body>
@@ -12,76 +12,40 @@
             <a href="#" onclick="history.back()"><img src="../images/back.png"></a> 
         </div>
         <div class="center-text">
-            <h2>Alumise taseme CASE-vahendid</h2>
+            <h2>ERD komponendid</h2>
         </div>
         <div class="spacer"></div>
     </header>
 
-    <div class="description center-text">
-        <p>
-            <b>Lower Case Tools</b> ehk <b>Alumise taseme CASE-vahendid</b> toetavad tarkvaraarenduse protsessi 
-            programmeerimise ja testimise faasis. 
-            Nad on kasutusel tarkvara koodi genereerimisel, testimisel ja ka dokumentatsiooni genereerimisel. 
-            Nad toetavad programmeerimiskeelte kasutamist (C, C++, Java, jne) ja ka testimise raamistike kasutamist 
-            (JUnit, NUnit, Selenium, jne).
-        </p>
-    </div>
-
     <div class="dropdown-buttons">
         <div class="first-case-tool-content">
             <button class="button" onclick="triggerDropDownOne()">
-                Doxygen
+                Entity
             </button>
             <div id="first-case-tool-dropdown" style="display: none">
-                <img src="../images/doxygen.png" alt="Doxygen">
+                <img style="width: 200px;"src="../images/entity-example.svg" alt="Entity">
 
-                <p><b>Doxygen</b> on dokumentatsioonigeneraator ja staatilise analüüsi tööriist tarkvara lähtepuude jaoks.
-                Kui seda kasutatakse dokumentatsiooni generaatorina, eraldab Doxygen teabe koodi spetsiaalselt vormindatud
-                kommentaaridest. Analüüsiks kasutades kasutab Doxygen oma parsipuud koodistruktuuri diagrammide ja diagrammide
-                genereerimiseks. Doxygen saab ristviita dokumentatsioonile ja koodile, nii et dokumendi lugeja saab hõlpsalt viidata tegelikule koodile.
-                </p>
-
-                <h3>Funktsioonid:</h3>
-
-                <ul>
-                    <li>Platvormidevaheline</li>
-                    <li>Javadoc (1.1), qdoc3 (osaliselt) ja ECMA-334 (C# spetsifikatsioon) ühilduv.</li>
-                    <li>Toetab C/C++, Lex, Java, (Corba ja Microsoft) Java, Python, VHDL, PHP IDL, C#, Fortran, Objective-C 2.0 ja mingil määral ka D-allikaid.</li>
-                    <li>Loob sõelutud allikate jaoks struktureeritud XML-väljundi, mida saavad kasutada välised tööriistad.</li>
-                    <li>JavaScriptil põhinev reaalajas otsingu funktsioon, sümbolite otsimiseks sisestamise ajal (väikese ja keskmise suurusega projektide puhul)</li>
-                </ul>
+                <p><b>Olem</b> - Määratletav asi - näiteks inimene, objekt, mõiste või sündmus, mille kohta võib andmeid salvestada. Mõelge olemitele kui nimisõnadele. Näited: klient, õpilane, auto või toode. Tavaliselt kuvatakse ristkülikuna.
 
             </div>
         </div>
 
         <div class="second-case-tool-content">
             <button class="button" onclick="triggerDropDownTwo()">
-                git
+                Relationship
             </button>
 
-            <div id="second-case-tool-dropdown" style="display: none">
-                <img src="../images/git.png" alt="Git">
+            <div id="first-case-tool-dropdown" style="display: none">
+                <img style="width: 200px;"src="../images/entity-example.svg" alt="Entity">
 
-                <p><b>Git</b> hajutatud versioonihaldussüsteem, mis jälgib muudatusi mis tahes arvutifailide komplektis,
-                mida tavaliselt kasutatakse programmeerijate töö koordineerimiseks, kes arendavad tarkvaraarenduse ajal koostöös lähtekoodi. 
-                Selle eesmärkide hulka kuuluvad kiirus, andmete terviklikkus ja hajutatud, mittelineaarsete töövoogude tugi 
-                (tuhanded paralleelsed harud, mis töötavad erinevates arvutites).</p>
+                <p><b>Olem</b> - Määratletav asi - näiteks inimene, objekt, mõiste või sündmus, mille kohta võib andmeid salvestada. Mõelge olemitele kui nimisõnadele. Näited: klient, õpilane, auto või toode. Tavaliselt kuvatakse ristkülikuna.
 
-                <h3>Funktsioonid:</h3>
-
-                <ul>
-                    <li>Jälgib ajalugu</li>
-                    <li>Toetab mitelineaarset arengut</li>
-                    <li>Loob varukoopiaid</li>
-                    <li>Skaleeritav</li>
-                </ul>
             </div>
-
         </div>
 
         <div class="third-case-tool-content">
             <button class="button" onclick="triggerDropDownThree()">
-                Adobe Robohelp
+                Attribute
             </button>
 
             <div id="third-case-tool-dropdown" style="display: none">
