@@ -100,34 +100,39 @@ h3 {
 
 .first-case-tool-content,
 .second-case-tool-content,
-.third-case-tool-content {
+.third-case-tool-content,
+.fourth-case-tool-content {
     text-align: center;
 
 }
 
 .first-case-tool-content img,
 .second-case-tool-content img,
-.third-case-tool-content img {
+.third-case-tool-content img,
+.fourth-case-tool-content img {
     margin: 20px auto;
     width: 1000px;
 }
 
 .first-case-tool-content p,
 .second-case-tool-content p,
-.third-case-tool-content p {
+.third-case-tool-content p,
+.fourth-case-tool-content p {
     max-width: 40%;
     margin: 20px auto 50px auto;  
 }
 
 .first-case-tool-content ul,
 .second-case-tool-content ul,
-.third-case-tool-content ul {
+.third-case-tool-content ul,
+.fourth-case-tool-content ul {
     margin: 20px auto 50px auto;  
 }
 
 .first-case-tool-content li,
 .second-case-tool-content li,
-.third-case-tool-content li {
+.third-case-tool-content li,
+.fourth-case-tool-content li {
     margin: 10px auto 10px auto;  
 }
 

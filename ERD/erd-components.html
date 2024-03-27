@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERD komponendid</title>
     <link rel="stylesheet" href="../index.css">
+    <script src="../scripts.js"></script>
 </head>
 <body>
     <header>
@@ -19,85 +20,77 @@
 
     <div class="dropdown-buttons">
         <div class="first-case-tool-content">
-            <button class="button" onclick="triggerDropDownOne()">
+            <button class="button" onclick='triggerDropDown("first-case-tool-dropdown")'>
                 Entity
             </button>
             <div id="first-case-tool-dropdown" style="display: none">
                 <img style="width: 200px;"src="../images/entity-example.svg" alt="Entity">
 
-                <p><b>Olem</b> - Määratletav asi - näiteks inimene, objekt, mõiste või sündmus, mille kohta võib andmeid salvestada. Mõelge olemitele kui nimisõnadele. Näited: klient, õpilane, auto või toode. Tavaliselt kuvatakse ristkülikuna.
-
+                <p><b>Entity</b> ehk <b>olem</b> - Määratletav asi - näiteks inimene, objekt, mõiste või sündmus, mille kohta võib andmeid salvestada.
+                <p>Olemitele võib mõelda kui nimisõnadele. Näiteks <em>klient</em>, <em>õpilane</em>, <em>auto</em> või <em>toode</em>.</p>
+                <p>Tavaliselt kujutatakse ristkülikuna.</p>
             </div>
         </div>
 
         <div class="second-case-tool-content">
-            <button class="button" onclick="triggerDropDownTwo()">
+            <button class="button" onclick='triggerDropDown("second-case-tool-dropdown")'>
                 Relationship
             </button>
 
-            <div id="first-case-tool-dropdown" style="display: none">
-                <img style="width: 200px;"src="../images/entity-example.svg" alt="Entity">
+            <div id="second-case-tool-dropdown" style="display: none">
+                <img style="width: 200px; margin-right: 10px;"src="../images/relationship-erd-1.svg" alt="Relationship">
+                <img style="width: 200px;"src="../images/relationship-erd-2.svg" alt="Relationship">
 
-                <p><b>Olem</b> - Määratletav asi - näiteks inimene, objekt, mõiste või sündmus, mille kohta võib andmeid salvestada. Mõelge olemitele kui nimisõnadele. Näited: klient, õpilane, auto või toode. Tavaliselt kuvatakse ristkülikuna.
+                <p><b>Relationship</b> ehk <b>suhe</b> - Kuidas olemid üksteisele mõjuvad või on omavahel seotud.
+                    <p>Suhetele võib mõelda kui tegusõnadele.</p>
+                    <p>Näiteks võib mingi <em>õpilane</em> registreeruda end mingile <em>kursusele</em>. Olemiteks oleksid <em>õpilane</em> ja <em>kursus</em> 
+                    ning suhe oleks <em>registreerumise akt</em>, mis ühendab kahte olemit.</p>
+                    <p>Suhteid kujutatakse tavaliselt teemantidena või <em>label</em>'itena otse ühendusliinidel.</p>
 
             </div>
         </div>
 
         <div class="third-case-tool-content">
-            <button class="button" onclick="triggerDropDownThree()">
+            <button class="button" onclick='triggerDropDown("third-case-tool-dropdown")'>
                 Attribute
             </button>
 
             <div id="third-case-tool-dropdown" style="display: none">
-                <img src="../images/robohelp.png" alt="Adobe Robohelp">
+                <img style="width: 200px; margin-right: 10px;"src="../images/erd-attribute-1.svg" alt="Attribute">
+                <img style="width: 200px; margin-right: 10px;"src="../images/erd-attribute-2.svg" alt="Attribute">
+                <img style="width: 200px; margin-right: 10px;"src="../images/erd-attribute-3.svg" alt="Attribute">
 
-                <p><b>Adobe Robohelp</b> on populaarne Adobe'i spikri loomise tööriist (<em>Help Authoring Tool</em> ehk <em>HAT</em>). 
-                Seda kasutavad tööstusharu spetsialistid, et pakkuda kaasahaaravat abisisu, e-õppe ressursse,
-                organisatsioonipoliitikat ja teadmistebaasi artikleid laiale vaatajaskonnale sõltumata seadme vormist.</p>
-
-                <h3>Funktsioonid:</h3>
-
-                <ul>
-                    <li>Ühe klõpsuga reageeriv HTML5 avaldamine:</li>
-                    <li>Kiire ja lihtne Dropboxi toega jagamine ja koostöö</li>
-                    <li>Kasutaja määratud muutujate (UDV) skript</li>
-                    <li>Kohandatavad tingimuslikud ehitussildid (CBT)</li>
-                    <li>Kohandatud päised ja jalused trükitud dokumentides</li>
-                </ul>
+                <p><b>Attribute</b> ehk <b>atribuut</b> - Olemi omadus või tunnus.
+                    <p>Atribuute kujutatakse tavaliselt ovaali või ringina</p>
 
             </div>
         </div>
+
+        <div class="fourth-case-tool-content">
+            <button class="button" onclick='triggerDropDown("fourth-case-tool-dropdown")'>
+                Cardinality
+            </button>
+
+            <div id="fourth-case-tool-dropdown" style="display: none">
+                <img style="width: 200px; margin-right: 10px;"src="../images/erd-cardinality-1.svg" alt="Zero-to-one">
+                <img style="width: 200px; margin-right: 10px;"src="../images/erd-cardinality-2.svg" alt="Many">
+                <img style="width: 200px; margin-bottom: 10px;"src="../images/erd-cardinality-3.svg" alt="One">
+                <br>
+                <img style="width: 200px; margin-right: 10px;"src="../images/erd-cardinality-4.svg" alt="One (and only one)">
+                <img style="width: 200px; margin-right: 10px;"src="../images/erd-cardinality-5.svg" alt="Zero or many">
+                <img style="width: 200px;"src="../images/erd-cardinality-6.svg" alt="One or many">
+
+                <p><b>Cardinality</b> ehk <b>kardinaalsus</b> - Määratleb kahe olemi või olemikogumi vahelise seose numbrilised atribuudid.
+                    <p>Kolm peamist kardinaalset suhet on <em>one-to-one</em>, <em>one-to-many</em> ja <em>many-many</em>.</p>
+                    <p><em>One-to-one</em> näide oleks õpilane, kes on seotud ühe postiaadressiga.</p>
+                    <p><em>One-to-many</em> (või <em>many-to-one</em>, olenevalt suhte suunast) näide oleks õpilane, kes registreerub mitmele kursusele</p>
+                    <p><em>Many-to-many</em> näide: Õpilased kui rühm on seotud mitme õppejõuga ja õppejõud omakorda mitme õpilasega.</p>
+
+            </div>
+        </div>
+        
     </div>
 
-    
-    <script>
-        function triggerDropDownOne() {
-            var dropdown = document.getElementById("first-case-tool-dropdown");
-            if (dropdown.style.display === "none") {
-                dropdown.style.display = "block";
-            } else {
-                dropdown.style.display = "none";
-            }
-        }
-
-        function triggerDropDownTwo() {
-            var dropdown = document.getElementById("second-case-tool-dropdown");
-            if (dropdown.style.display === "none") {
-                dropdown.style.display = "block";
-            } else {
-                dropdown.style.display = "none";
-            }
-        }
-
-        function triggerDropDownThree() {
-            var dropdown = document.getElementById("third-case-tool-dropdown");
-            if (dropdown.style.display === "none") {
-                dropdown.style.display = "block";
-            } else {
-                dropdown.style.display = "none";
-            }
-        }
-    </script>
 
     
 </body>
